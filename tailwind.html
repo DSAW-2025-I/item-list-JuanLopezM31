@@ -4,11 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Tailwind | Product List With Cart</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-  
+  <body class="bg-[#f0f0f0ff] flex items-center justify-center my-5">
+    <main class="p-4 bg-white rounded shadow-lg w-11/12 max-w-screen-lg my-4">
+      <h1 class="text-2xl font-bold mb-4">Desserts</h1>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+        <div class="col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <article class="p-4 border rounded relative">
+            <header>
+              <img src="./assets/image-waffle-desktop.jpg" alt="Waffle with Berries" class="mb-2 relative md:hidden">
+              <img src="./assets/image-waffle-tablet.jpg" alt="Waffle with Berries" class="mb-2 relative hidden md:block lg:hidden">
+              <img src="./assets/image-waffle-desktop.jpg" alt="Waffle with Berries" class="mb-2 relative hidden lg:block">
+              <button class="mt-2 p-2 bg-white text-[#cc3b0aff] border border-[#cc3b0aff] rounded-full flex items-center justify-center mx-auto">
+                <img src="./assets/icon-add-to-cart.svg" alt="Add to Cart" class="w-4 h-4 mr-2">
+                Add to Cart
+              </button>
+              <h2 class="text-xl font-semibold mt-2">Waffle with Berries</h2>
+            </header>
+            <p>Waffle</p>
+            <p>6.50</p>
+          </article>
+          <article class="p-4 border rounded relative">
+            <header>
+              <img src="./assets/image-creme-brulee-desktop.jpg" alt="Vanilla Bean Crème Brûlée" class="mb-2 relative md:hidden">
+              <img src="./assets/image-creme-brulee-tablet.jpg" alt="Vanilla Bean Crème Brûlée" class="mb-2 relative hidden md:block lg:hidden">
+              <img src="./assets/image-creme-brulee-desktop.jpg" alt="Vanilla Bean Crème Brûlée" class="mb-2 relative hidden lg:block">
+              <button class="mt-2 p-2 bg-white text-[#cc3b0aff] border border-[#cc3b0aff] rounded-full flex items-center justify-center mx-auto">
+                <img src="./assets/icon-add-to-cart.svg" alt="Add to Cart" class="w-4 h-4 mr-2">
+                Add to Cart
+              </button>
+              <h2 class="text-xl font-semibold mt-2">Vanilla Bean Crème Brûlée</h2>
+            </header>
+            <p>Crème Brûlée</p>
+            <p>7.00</p>
+          </article>
+          <article class="p-4 border rounded relative">
+            <header>
+              <img src="./assets/image-macaron-desktop.jpg" alt="Macaron Mix of Five" class="mb-2 relative md:hidden">
+              <img src="./assets/image-macaron-tablet.jpg" alt="Macaron Mix of Five" class="mb-2 relative hidden md:block lg:hidden">
+              <img src="./assets/image-macaron-desktop.jpg" alt="Macaron Mix of Five" class="mb-2 relative hidden lg:block">
+              <button class="mt-2 p-2 bg-white text-[#cc3b0aff] border border-[#cc3b0aff] rounded-full flex items-center justify-center mx-auto">
+                <img src="./assets/icon-add-to-cart.svg" alt="Add to Cart" class="w-4 h-4 mr-2">
+                Add to Cart
+              </button>
+              <h2 class="text-xl font-semibold mt-2">Macaron Mix of Five</h2>
+            </header>
+            <p>Macaron</p>
+            <p>8.00</p>
+          </article>
+          <article class="p-4 border rounded relative">
+            <header>
+              <img src="./assets/image-tiramisu-desktop.jpg" alt="Classic Tiramisu" class="mb-2 relative md:hidden">
+              <img src="./assets/image-tiramisu-tablet.jpg" alt="Classic Tiramisu" class="mb-2 relative hidden md:block lg:hidden">
+              <img src="./assets/image-tiramisu-desktop.jpg" alt="Classic Tiramisu" class="mb-2 relative hidden lg:block">
+              <button class="mt-2 p-2 bg-white text-[#cc3b0aff] border border-[#cc3b0aff] rounded-full flex items-center justify-center mx-auto">
+                <img src="./assets/icon-add-to-cart.svg" alt="Add to Cart" class="w-4 h-4 mr-2">
+                Add to Cart
+              </button>
+              <h2 class="text-xl font-semibold mt-2">Classic Tiramisu</h2>
+            </header>
+            <p>Tiramisu</p>
+            <p>5.50</p>
+          </article>
+          <article class="p-4 border rounded relative">
+            <header>
+              <img src="./assets/image-baklava-desktop.jpg" alt="Pistachio Baklava" class="mb-2 relative md:hidden">
+              <img src="./assets/image-baklava-tablet.jpg" alt="Pistachio Baklava" class="mb-2 relative hidden md:block lg:hidden">
+              <img src="./assets/image-baklava-desktop.jpg" alt="Pistachio Baklava" class="mb-2 relative hidden lg:block">
+              <button class="mt-2 p-2 bg-white text-[#cc3b0aff] border border-[#cc3b0aff] rounded-full flex items-center justify-center mx-auto">
+                <img src="./assets/icon-add-to-cart.svg" alt="Add to Cart" class="w-4 h-4 mr-2">
+                Add to Cart
+              </button>
+              <h2 class="text-xl font-semibold mt-2">Pistachio Baklava</h2>
+            </header>
+            <p>Baklava</p>
+            <p>4.00</p>
+          </article>
+          <article class="p-4 border rounded relative">
+            <header>
+              <img src="./assets/image-meringue-desktop.jpg" alt="Lemon Meringue Pie" class="mb-2 relative md:hidden">
+              <img src="./assets/image-meringue-tablet.jpg" alt="Lemon Meringue Pie" class="mb-2 relative hidden md:block lg:hidden">
+              <img src="./assets/image-meringue-desktop.jpg" alt="Lemon Meringue Pie" class="mb-2 relative hidden lg:block">
+              <button class="mt-2 p-2 bg-white text-[#cc3b0aff] border border-[#cc3b0aff] rounded-full flex items-center justify-center mx-auto">
+                <img src="./assets/icon-add-to-cart.svg" alt="Add to Cart" class="w-4 h-4 mr-2">
+                Add to Cart
+              </button>
+              <h2 class="text-xl font-semibold mt-2">Lemon Meringue Pie</h2>
+            </header>
+            <p>Pie</p>
+            <p>5.00</p>
+          </article>
+          <article class="p-4 border rounded relative">
+            <header>
+              <img src="./assets/image-cake-desktop.jpg" alt="Red Velvet Cake" class="mb-2 relative md:hidden">
+              <img src="./assets/image-cake-tablet.jpg" alt="Red Velvet Cake" class="mb-2 relative hidden md:block lg:hidden">
+              <img src="./assets/image-cake-desktop.jpg" alt="Red Velvet Cake" class="mb-2 relative hidden lg:block">
+              <button class="mt-2 p-2 bg-white text-[#cc3b0aff] border border-[#cc3b0aff] rounded-full flex items-center justify-center mx-auto">
+                <img src="./assets/icon-add-to-cart.svg" alt="Add to Cart" class="w-4 h-4 mr-2">
+                Add to Cart
+              </button>
+              <h2 class="text-xl font-semibold mt-2">Red Velvet Cake</h2>
+            </header>
+            <p>Cake</p>
+            <p>4.50</p>
+          </article>
+          <article class="p-4 border rounded relative">
+            <header>
+              <img src="./assets/image-brownie-desktop.jpg" alt="Salted Caramel Brownie" class="mb-2 relative md:hidden">
+              <img src="./assets/image-brownie-tablet.jpg" alt="Salted Caramel Brownie" class="mb-2 relative hidden md:block lg:hidden">
+              <img src="./assets/image-brownie-desktop.jpg" alt="Salted Caramel Brownie" class="mb-2 relative hidden lg:block">
+              <button class="mt-2 p-2 bg-white text-[#cc3b0aff] border border-[#cc3b0aff] rounded-full flex items-center justify-center mx-auto">
+                <img src="./assets/icon-add-to-cart.svg" alt="Add to Cart" class="w-4 h-4 mr-2">
+                Add to Cart
+              </button>
+              <h2 class="text-xl font-semibold mt-2">Salted Caramel Brownie</h2>
+            </header>
+            <p>Brownie</p>
+            <p>4.50</p>
+          </article>
+          <article class="p-4 border rounded relative">
+            <header>
+              <img src="./assets/image-panna-cotta-desktop.jpg" alt="Vanilla Panna Cotta" class="mb-2 relative md:hidden">
+              <img src="./assets/image-panna-cotta-tablet.jpg" alt="Vanilla Panna Cotta" class="mb-2 relative hidden md:block lg:hidden">
+              <img src="./assets/image-panna-cotta-desktop.jpg" alt="Vanilla Panna Cotta" class="mb-2 relative hidden lg:block">
+              <button class="mt-2 p-2 bg-white text-[#cc3b0aff] border border-[#cc3b0aff] rounded-full flex items-center justify-center mx-auto">
+                <img src="./assets/icon-add-to-cart.svg" alt="Add to Cart" class="w-4 h-4 mr-2">
+                Add to Cart
+              </button>
+              <h2 class="text-xl font-semibold mt-2">Vanilla Panna Cotta</h2>
+            </header>
+            <p>Panna Cotta</p>
+            <p>6.50</p>
+          </article>
+        </div>
+        <aside class="p-4 border rounded">
+          <h2 class="text-xl font-semibold">Your Cart (<span class="cart-count">0</span>)</h2>
+          <div class="cart-items-container">
+          </div>
+          <div class="order-total font-bold text-lg mt-4">
+            Order Total: <span class="text-lg font-bold total-price">$0.00</span>
+          </div>
+          <button id="confirm-order" class="mt-4 w-full bg-red-500 text-white py-2 rounded hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">
+            Confirm Order
+          </button>
+          <button id="new-order" class="mt-2 w-full bg-gray-500 text-white py-2 rounded hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300">
+            New Order
+          </button>
+        </aside>
+      
+      </div>
+    </main>
   </body>
 </html>
